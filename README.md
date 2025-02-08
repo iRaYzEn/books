@@ -1,3 +1,3 @@
 # books
 
-### exercises for all the books that i read
+### Exercises for all the books I read
