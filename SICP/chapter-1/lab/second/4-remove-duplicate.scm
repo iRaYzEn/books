@@ -1,0 +1,6 @@
+(define (test x)
+  (if (member? (first x) (bf x))
+    (test(bf x))
+    (if (member? (last x) (bl x))
+      (test (bl x))
+      x)))
