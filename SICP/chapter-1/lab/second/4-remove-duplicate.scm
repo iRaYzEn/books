@@ -1,6 +1,6 @@
-(define (test x)
-  (if (member? (first x) (bf x))
-    (test(bf x))
-    (if (member? (last x) (bl x))
-      (test (bl x))
-      x)))
+(define (dupls-removed x)
+  (cond((empty? x) '())
+      ((member? (first x) (bf x))
+       (dupls-removed (bf x))) 
+      (else 
+        (sentence (first x)  (dupls-removed (bf x)) ))))
