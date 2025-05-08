@@ -14,4 +14,10 @@
 ;its arguments one at a time? Can you think of reasons why it might be advantageous to
 ;treat or as an ordinary function?
 
+; i think that the stop condition will be broken and there will be an infinte loop
 
+(define (loop-forver) (loop-forever))
+(or #t (loop-forever))
+
+;sepcial form => 1
+;not sepcial form => loop-forever
